@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Home Now | A Home</title>
+    <link th:replace="fragments/styles.html :: styles"/>
+</head>
+<body>
+<div th:replace="fragments/navbar.html :: navbar"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-md-2">
+            <a th:href="@{/add-house}" class="btn btn-raised btn-success btn-round"><i class="fas fa-house"></i></a>
+        </div>
+        <div class="col col-md-10 mr-2">
+
+        </div>
+    </div>
+</div>
+
+<div th:replace="fragments/footer.html :: footer"></div>
+<div th:replace="fragments/scripts.html :: scripts"></div>
+</body>
+</html>
